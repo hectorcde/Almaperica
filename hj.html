@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlmaPérica</title>
+  <style>
+    /* Fuente */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: 
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url('fondo-estadio.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #0078ff;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #ffffff;
+      font-size: 2em;
+    }
+
+    header p {
+      margin: 5px 0;
+      font-size: 1em;
+      color: #bbbbbb;
+    }
+
+    nav {
+      background-color: #181818;
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 1px solid #2c2c2c;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    nav a:hover {
+      color: #0078ff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border: 1px solid #2c2c2c;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card h2 {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+
+    .card .date {
+      font-size: 0.85em;
+      color: #999;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 1em;
+      margin-bottom: 15px;
+    }
+
+    .card img, .card video {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    .share-btn {
+      background-color: #1da1f2;
+      color: white;
+      padding: 8px 12px;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 5px;
+      margin-top: auto;
+      font-size: 0.9em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 0.9em;
+      background-color: #1a1a1a;
+      border-top: 1px solid #333;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AlmaPérica</h1>
+    <p>Noticias exclusivas del RCD Espanyol ⚪🔵</p>
+  </header>
+
+  <nav>
+    <a href="#exclusivas">Exclusivas</a>
+    <a href="#ultima-hora">Última Hora</a>
+    <a href="#noticias">Noticias</a>
+  </nav>
+
+  <!-- Contenedor para las secciones -->
+  <div class="container" id="exclusivas">
+    <!-- Aquí van tus artículos como tarjetas -->
+    <!-- Ejemplo vacío listo para copiar -->
+    <!--
+    <div class="card">
+      <h2>Título del artículo</h2>
+      <div class="date">Publicado el XX de julio de 2025 a las XX:XX</div>
+      <p>Contenido del artículo aquí...</p>
+      <img src="img/ejemplo.jpg" alt="Descripción de la imagen">
+      <a class="share-btn" href="https://twitter.com/intent/tweet?text=Título+https://tusitio.com" target="_blank">
+        Compartir en Twitter
+      </a>
+    </div>
+    -->
+  </div>
+
+  <div class="container" id="ultima-hora">
+    <!-- Tarjetas de última hora -->
+  </div>
+
+  <div class="container" id="noticias">
+    <!-- Tarjetas de noticias generales -->
+  </div>
+
+  <footer>
+<div class="card">
+  <h2>Título del artículo</h2>
+  <div class="date">Publicado el 29 de julio de 2025 a las 18:00</div>
+  <p>Tu texto aquí. Puedes escribir lo que quieras sobre el partido, fichajes, rumores o historia del club.</p>
+  <img src="img/tu-imagen.jpg" alt="Descripción" />
+  <a class="share-btn" href="https://twitter.com/intent/tweet?text=Tu+texto+https://tusitio.com" target="_blank">
+    Compartir en Twitter
+  </a>
+</div>
+
+    &copy; 2025 AlmaPérica | Página no oficial del RCD Espanyol
+  </footer>
+</body>
+</html>
